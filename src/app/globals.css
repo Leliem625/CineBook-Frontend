@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Màu thương hiệu CineBook */
+@theme {
+  --color-brand: #d6203f;
+  --color-brand-dark: #b0182f;
+  --color-brand-soft: #fdecef;
+  --color-ink: #1d2230;
+  --color-muted: #6b7180;
+  --color-line: #e5e7ee;
+  --color-surface: #f5f6fa;
+  --color-notice: #f6c64a;
+  --font-sans: var(--font-be-vietnam), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+/* Ẩn thanh cuộn ngang của carousel nhưng vẫn cuộn được */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Thanh cuộn mảnh cho các danh sách dài */
+.thin-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cfd3dc transparent;
+}

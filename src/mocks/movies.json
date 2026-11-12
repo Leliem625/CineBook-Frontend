@@ -1,0 +1,739 @@
+[
+ {
+  "id": 3,
+  "tmdbId": 1400837,
+  "slug": "nguoi-me-khac",
+  "title": "Người Mẹ Khác",
+  "originalTitle": "Other Mommy",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/nZYi7HeXJVfJmZ0kprb1cJBHN2g.jpg",
+  "releaseDate": "2026-10-09",
+  "ageRating": null,
+  "runtime": 93,
+  "score": 5.9,
+  "trailerKey": "-mnTITqqiT0",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Kinh dị"
+  ]
+ },
+ {
+  "id": 1,
+  "tmdbId": 1381071,
+  "slug": "godzilla-tru-khong",
+  "title": "Godzilla Trừ Không",
+  "originalTitle": "ゴジラ-0.0",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/okxuQ9YDNiW6cAVOvDaco2J9y6A.jpg",
+  "releaseDate": "2026-11-06",
+  "ageRating": null,
+  "runtime": 135,
+  "score": 7.8,
+  "trailerKey": "pWJjYoqVSjQ",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Hành động",
+   "Khoa học viễn tưởng",
+   "Kinh dị"
+  ]
+ },
+ {
+  "id": 2,
+  "tmdbId": 656908,
+  "slug": "ramayana-khoi-nguon-mot-huyen-thoai",
+  "title": "Ramayana: Khởi Nguồn Một Huyền Thoại",
+  "originalTitle": "रामायणम्",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/dI0jgiSu7yy26tUGi7P1fxRpRIz.jpg",
+  "releaseDate": "2026-11-06",
+  "ageRating": null,
+  "runtime": 201,
+  "score": 7.8,
+  "trailerKey": "AYkPRN874m8",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Giả tưởng",
+   "Hành động",
+   "Phiêu lưu"
+  ]
+ },
+ {
+  "id": 4,
+  "tmdbId": 1400940,
+  "slug": "clayface",
+  "title": "Clayface",
+  "originalTitle": "Clayface",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/vyQJ8ER4DYKVrCeraQ1VGQf7Olt.jpg",
+  "releaseDate": "2026-10-30",
+  "ageRating": null,
+  "runtime": 109,
+  "score": 7.4,
+  "trailerKey": "f7jlCqdtwdM",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Gây cấn",
+   "Khoa học viễn tưởng",
+   "Kinh dị"
+  ]
+ },
+ {
+  "id": 5,
+  "tmdbId": 1153576,
+  "slug": "phim-street-fighter",
+  "title": "Phim Street Fighter",
+  "originalTitle": "Street Fighter",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/lnaGK9y2Dw1cwRz8e7X5plvYVdI.jpg",
+  "releaseDate": "2026-10-16",
+  "ageRating": null,
+  "runtime": 120,
+  "score": 6.3,
+  "trailerKey": "U6sbm1OaJb8",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Giả tưởng",
+   "Hành động"
+  ]
+ },
+ {
+  "id": 6,
+  "tmdbId": 1255833,
+  "slug": "ca-voi-nuot-chung",
+  "title": "Cá Voi Nuốt Chửng",
+  "originalTitle": "Whalefall",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/t644ur9Yj3ypD2r4y82c5GssPj3.jpg",
+  "releaseDate": "2026-10-16",
+  "ageRating": null,
+  "runtime": 106,
+  "score": 6.6,
+  "trailerKey": "Dw-5ZGapGTQ",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Gây cấn"
+  ]
+ },
+ {
+  "id": 7,
+  "tmdbId": 1623376,
+  "slug": "blue-lock-cuoc-chien-cua-nhung-tien-dao",
+  "title": "Blue Lock: Cuộc Chiến Của Những Tiền Đạo",
+  "originalTitle": "ブルーロック",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/taGdDDoNzBYbcucNWXpNQopGHkg.jpg",
+  "releaseDate": "2026-10-09",
+  "ageRating": null,
+  "runtime": 128,
+  "score": 8.8,
+  "trailerKey": null,
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Chính kịch",
+   "Hành động"
+  ]
+ },
+ {
+  "id": 8,
+  "tmdbId": 1281331,
+  "slug": "phan-xet-su-that",
+  "title": "Phán Xét Sự Thật",
+  "originalTitle": "The Social Reckoning",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/yPFKOAqUs6AxhLNT1igcBULvWLq.jpg",
+  "releaseDate": "2026-10-09",
+  "ageRating": null,
+  "runtime": 113,
+  "score": 7.0,
+  "trailerKey": "R8ANzYpaZaY",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Chính kịch",
+   "Gây cấn"
+  ]
+ },
+ {
+  "id": 10,
+  "tmdbId": 1477104,
+  "slug": "shaun-the-sheep-quai-la-ghe-nha",
+  "title": "Shaun the Sheep: \"Quái Lạ\" Ghé Nhà",
+  "originalTitle": "Shaun the Sheep: The Beast of Mossy Bottom",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/4XDUPhEjxLRyCUU5uB4XgE6kOBE.jpg",
+  "releaseDate": "2026-10-16",
+  "ageRating": null,
+  "runtime": 81,
+  "score": 7.3,
+  "trailerKey": "daZMq0AyOMc",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Gia đình",
+   "Hài",
+   "Hoạt hình",
+   "Khoa học viễn tưởng"
+  ]
+ },
+ {
+  "id": 11,
+  "tmdbId": 149871,
+  "slug": "chuyen-nang-cong-chua-kaguya",
+  "title": "Chuyện Nàng Công Chúa Kaguya",
+  "originalTitle": "かぐや姫の物語",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/5EM4TE9wlLfvA9yQaQZdKR5RwrR.jpg",
+  "releaseDate": "2026-10-09",
+  "ageRating": null,
+  "runtime": 137,
+  "score": 8.1,
+  "trailerKey": "iPm7HfO3mis",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Chính kịch",
+   "Giả tưởng",
+   "Hoạt hình"
+  ]
+ },
+ {
+  "id": 13,
+  "tmdbId": 1659696,
+  "slug": "kamen-rider-zeztz-nhiem-vu-tu-biet",
+  "title": "Kamen Rider ZEZTZ: Nhiệm Vụ Từ Biệt",
+  "originalTitle": "仮面ライダーゼッツ さよならのミッション",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/dg6w7NwKxoeAMxXkbYUIT03fHbD.jpg",
+  "releaseDate": "2026-10-30",
+  "ageRating": null,
+  "runtime": null,
+  "score": 0.0,
+  "trailerKey": null,
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Hành động",
+   "Khoa học viễn tưởng"
+  ]
+ },
+ {
+  "id": 12,
+  "tmdbId": 83389,
+  "slug": "ngon-doi-hoa-hong-anh",
+  "title": "Ngọn Đồi Hoa Hồng Anh",
+  "originalTitle": "コクリコ坂から",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/4tw1Q0Hpvvac55jwz213DCI4LUQ.jpg",
+  "releaseDate": "2026-10-16",
+  "ageRating": null,
+  "runtime": 91,
+  "score": 7.5,
+  "trailerKey": "a0DIxdy8CZA",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Chính kịch",
+   "Hoạt hình"
+  ]
+ },
+ {
+  "id": 14,
+  "tmdbId": 1489932,
+  "slug": "always-lalisa",
+  "title": "Always Lalisa",
+  "originalTitle": "Always Lalisa",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/o2s3QoaBQCbGQd72d7dgLbuJE0z.jpg",
+  "releaseDate": "2026-10-12",
+  "ageRating": null,
+  "runtime": 100,
+  "score": 7.0,
+  "trailerKey": "s6NUEu1x64I",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Âm nhạc",
+   "Tài liệu"
+  ]
+ },
+ {
+  "id": 15,
+  "tmdbId": 1584855,
+  "slug": "thien-duong-tam-toi",
+  "title": "Thiên Đường Tăm Tối",
+  "originalTitle": "실낙원",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/3XneeGMSvbPBFW63oJERhedHcHe.jpg",
+  "releaseDate": "2026-11-06",
+  "ageRating": null,
+  "runtime": 101,
+  "score": 5.5,
+  "trailerKey": "Yhdt5zJ1_Jc",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Chính kịch",
+   "Gây cấn",
+   "Khoa học viễn tưởng"
+  ]
+ },
+ {
+  "id": 16,
+  "tmdbId": 1716222,
+  "slug": "don-hang-ma-am",
+  "title": "Đơn Hàng Ma Ám",
+  "originalTitle": "Paket Santet",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/5XQyttCSqAYnTXrZR48XFnYO2qo.jpg",
+  "releaseDate": "2026-11-06",
+  "ageRating": null,
+  "runtime": 98,
+  "score": 6.0,
+  "trailerKey": "iAAtCbIbGfU",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Bí ẩn",
+   "Gây cấn",
+   "Kinh dị"
+  ]
+ },
+ {
+  "id": 19,
+  "tmdbId": 1744848,
+  "slug": "chi-chi-em-em-3",
+  "title": "Chị Chị Em Em 3",
+  "originalTitle": "Chị Chị Em Em 3",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/aFOS7OFrXTFgYenMoEqg8jNA5AX.jpg",
+  "releaseDate": "2026-10-30",
+  "ageRating": null,
+  "runtime": 122,
+  "score": 0.0,
+  "trailerKey": "T2agdzhXOaY",
+  "status": "NOW_SHOWING",
+  "vietnamese": true,
+  "genres": [
+   "Chính kịch",
+   "Gây cấn",
+   "Lãng mạn"
+  ]
+ },
+ {
+  "id": 20,
+  "tmdbId": 1752234,
+  "slug": "ngay-con-con-me",
+  "title": "Ngày Con Còn Mẹ",
+  "originalTitle": "Ngày Con Còn Mẹ",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/f0TgImN08ra9O6ovrFHxv8wthLf.jpg",
+  "releaseDate": "2026-11-11",
+  "ageRating": null,
+  "runtime": null,
+  "score": 0.0,
+  "trailerKey": null,
+  "status": "NOW_SHOWING",
+  "vietnamese": true,
+  "genres": []
+ },
+ {
+  "id": 17,
+  "tmdbId": 1692603,
+  "slug": "bo-sua-bay",
+  "title": "Bò Sữa Bay",
+  "originalTitle": "Bò Sữa Bay",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/y2AC6NxknGlZapSwCSYMOMxHOvl.jpg",
+  "releaseDate": "2026-11-06",
+  "ageRating": null,
+  "runtime": 108,
+  "score": 7.0,
+  "trailerKey": "2Y8yw8bAG1o",
+  "status": "NOW_SHOWING",
+  "vietnamese": true,
+  "genres": [
+   "Chính kịch"
+  ]
+ },
+ {
+  "id": 21,
+  "tmdbId": 1688795,
+  "slug": "",
+  "title": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
+  "originalTitle": "투모로우바이투게더 월드 투어 ‘액트 : 투모로우'",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/aRoPHxYzfQjCLxSp4H4sJANNmou.jpg",
+  "releaseDate": "2026-10-24",
+  "ageRating": null,
+  "runtime": 97,
+  "score": 0.0,
+  "trailerKey": "q0XKUFGn_M4",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Âm nhạc",
+   "Tài liệu"
+  ]
+ },
+ {
+  "id": 18,
+  "tmdbId": 1770234,
+  "slug": "bts-world-tour-arirang-in-sao-paulo-live-viewing",
+  "title": "BTS World Tour 'Arirang' In São Paulo: Live Viewing",
+  "originalTitle": "BTS WORLD TOUR [ARIRANG] in São Paulo",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/co7oHM6UMhuskwfp9lzXQW9zGBw.jpg",
+  "releaseDate": "2026-10-31",
+  "ageRating": null,
+  "runtime": 195,
+  "score": 8.0,
+  "trailerKey": null,
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Âm nhạc"
+  ]
+ },
+ {
+  "id": 22,
+  "tmdbId": 1749884,
+  "slug": "an-mang-xem-hoan-hao",
+  "title": "Án Mạng Xém Hoàn Hảo",
+  "originalTitle": "Án Mạng Xém Hoàn Hảo",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/2IBPaHSc0YY55mI9fSyCfcoKi8V.jpg",
+  "releaseDate": "2026-10-09",
+  "ageRating": null,
+  "runtime": 124,
+  "score": 0.0,
+  "trailerKey": "OYavW5ycjnY",
+  "status": "NOW_SHOWING",
+  "vietnamese": true,
+  "genres": [
+   "Hài",
+   "Hình sự"
+  ]
+ },
+ {
+  "id": 23,
+  "tmdbId": 1756422,
+  "slug": "an-mang-karaoke",
+  "title": "Án Mạng Karaoke",
+  "originalTitle": "Án Mạng Karaoke",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/o3LCNcEfE0J8qIQ37NKpoOq1Sj5.jpg",
+  "releaseDate": "2026-10-30",
+  "ageRating": null,
+  "runtime": 96,
+  "score": 6.0,
+  "trailerKey": "N_jtjt1xb-o",
+  "status": "NOW_SHOWING",
+  "vietnamese": true,
+  "genres": [
+   "Bí ẩn",
+   "Gây cấn",
+   "Hài"
+  ]
+ },
+ {
+  "id": 24,
+  "tmdbId": 1659702,
+  "slug": "sieu-canh-sat-vu-tru-gavan-infinity-ngay-mat-troi-ruom-le",
+  "title": "Siêu Cảnh Sát Vũ Trụ Gavan Infinity: Ngày Mặt Trời Rướm Lệ",
+  "originalTitle": "超宇宙刑事ギャバン インフィニティ 太陽が泣いた日",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/9kzVitF2WWSje7qc5PPlrh0GY2j.jpg",
+  "releaseDate": "2026-10-30",
+  "ageRating": null,
+  "runtime": null,
+  "score": 0.0,
+  "trailerKey": "ckpURuMBXdg",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Hành động",
+   "Khoa học viễn tưởng",
+   "Phiêu lưu"
+  ]
+ },
+ {
+  "id": 26,
+  "tmdbId": 1797226,
+  "slug": "-1797226",
+  "title": "하이브 치어링 파티",
+  "originalTitle": "하이브 치어링 파티",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/8udWFUoL5NxqKR1xtYinhcxY3gn.jpg",
+  "releaseDate": "2026-10-24",
+  "ageRating": null,
+  "runtime": 60,
+  "score": 0.0,
+  "trailerKey": "q0XKUFGn_M4",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Âm nhạc"
+  ]
+ },
+ {
+  "id": 25,
+  "tmdbId": 1329566,
+  "slug": "ngu-mieu-pha-an",
+  "title": "Ngự Miêu Phá Án",
+  "originalTitle": "金陵御猫",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/ohUKwYDla2uKG9GQjaQB5Dua41t.jpg",
+  "releaseDate": "2026-10-30",
+  "ageRating": null,
+  "runtime": 97,
+  "score": 6.3,
+  "trailerKey": "FWqM3IBJyTw",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Bí ẩn",
+   "Giả tưởng",
+   "Hoạt hình"
+  ]
+ },
+ {
+  "id": 27,
+  "tmdbId": 1797200,
+  "slug": "-1797200",
+  "title": "세븐틴 월드 투어 '뉴_'",
+  "originalTitle": "세븐틴 월드 투어 '뉴_'",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/p3SW5xiKdUJ0zIY3hMyyCQ6tcru.jpg",
+  "releaseDate": "2026-10-24",
+  "ageRating": null,
+  "runtime": 103,
+  "score": 0.0,
+  "trailerKey": "q0XKUFGn_M4",
+  "status": "NOW_SHOWING",
+  "vietnamese": false,
+  "genres": [
+   "Âm nhạc",
+   "Tài liệu"
+  ]
+ },
+ {
+  "id": 28,
+  "tmdbId": 1765072,
+  "slug": "diem-mu",
+  "title": "Điểm Mù",
+  "originalTitle": "You Can See Everything",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/8xQlSsMpikHi0WINkqNOgx8kuaZ.jpg",
+  "releaseDate": "2026-11-27",
+  "ageRating": null,
+  "runtime": 175,
+  "score": 8.9,
+  "trailerKey": "IEx8D1Wb__U",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Tài liệu"
+  ]
+ },
+ {
+  "id": 29,
+  "tmdbId": 1300968,
+  "slug": "dau-truong-sinh-tu-binh-minh-ngay-chieu-quan",
+  "title": "Đấu Trường Sinh Tử: Bình Minh Ngày Chiêu Quân",
+  "originalTitle": "The Hunger Games: Sunrise on the Reaping",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/sW8pW5AjNOLaRlhuJcyJ7ID6Mhq.jpg",
+  "releaseDate": "2026-11-20",
+  "ageRating": null,
+  "runtime": 159,
+  "score": 0.0,
+  "trailerKey": "Dr060OLTodE",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Hành động",
+   "Khoa học viễn tưởng",
+   "Phiêu lưu"
+  ]
+ },
+ {
+  "id": 9,
+  "tmdbId": 1437511,
+  "slug": "bi-kip-luyen-cuop",
+  "title": "Bí Kíp Luyện Cướp",
+  "originalTitle": "How to Rob a Bank",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/xep4kKlNOIiJcXC6Ymvu1IyilAn.jpg",
+  "releaseDate": "2026-11-13",
+  "ageRating": null,
+  "runtime": 122,
+  "score": 8.5,
+  "trailerKey": "MVvWKh336m4",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Gây cấn",
+   "Hành động",
+   "Hình sự"
+  ]
+ },
+ {
+  "id": 30,
+  "tmdbId": 1538497,
+  "slug": "hexed-the-gioi-phep-thuat",
+  "title": "Hexed: Thế Giới Phép Thuật",
+  "originalTitle": "Hexed",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/kaujVsr4qhsVyQurU1TDG4y477I.jpg",
+  "releaseDate": "2026-11-27",
+  "ageRating": null,
+  "runtime": 103,
+  "score": 0.0,
+  "trailerKey": "IuosV-TRxDU",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Gia đình",
+   "Giả tưởng",
+   "Hài",
+   "Hoạt hình",
+   "Phiêu lưu"
+  ]
+ },
+ {
+  "id": 31,
+  "tmdbId": 1400336,
+  "slug": "gap-go-thong-gia-dau-moi-trinh-lang",
+  "title": "Gặp Gỡ Thông Gia: Dâu Mới Trình Làng",
+  "originalTitle": "Focker-in-Law",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/rOvmiVH0PtqHv0YGUKRnrTZIlY0.jpg",
+  "releaseDate": "2026-11-27",
+  "ageRating": null,
+  "runtime": 105,
+  "score": 0.0,
+  "trailerKey": "9CKu3WoMYCg",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Hài",
+   "Lãng mạn"
+  ]
+ },
+ {
+  "id": 32,
+  "tmdbId": 1078446,
+  "slug": "dem-hung-tan-2",
+  "title": "Đêm Hung Tàn 2",
+  "originalTitle": "Violent Night 2",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/m5ZVKQU1bqsH42vkw8TLc1bQzpb.jpg",
+  "releaseDate": "2026-12-04",
+  "ageRating": null,
+  "runtime": 110,
+  "score": 0.0,
+  "trailerKey": "FmM2giDwLAE",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Giả tưởng",
+   "Hài",
+   "Hành động"
+  ]
+ },
+ {
+  "id": 33,
+  "tmdbId": 1590933,
+  "slug": "nguoi-tua-mot-vi-sao",
+  "title": "Người, Tựa Một Vì Sao",
+  "originalTitle": "汝、星のごとく",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/sM4P60sNzycnJMZRrpGiN4KYGAy.jpg",
+  "releaseDate": "2026-11-27",
+  "ageRating": null,
+  "runtime": 135,
+  "score": 8.0,
+  "trailerKey": null,
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Chính kịch",
+   "Lãng mạn"
+  ]
+ },
+ {
+  "id": 34,
+  "tmdbId": 1662293,
+  "slug": "ma-mut-con-vuot-ky-bang-ha",
+  "title": "Ma Mút Con Vượt Kỷ Băng Hà",
+  "originalTitle": "Приключения мамонтенка. В поисках мамы",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/g5T7HJm5EB6TM0z5buh8ELecBM2.jpg",
+  "releaseDate": "2026-11-20",
+  "ageRating": null,
+  "runtime": 90,
+  "score": 0.0,
+  "trailerKey": null,
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Gia đình",
+   "Hoạt hình",
+   "Phiêu lưu"
+  ]
+ },
+ {
+  "id": 35,
+  "tmdbId": 1365598,
+  "slug": "kien-le-phieu-luu-ke",
+  "title": "Kiến Lé Phiêu Lưu Ké",
+  "originalTitle": "Arnie & Barney",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/cINQlAL3zqlq9n69fnBbS1zTuWb.jpg",
+  "releaseDate": "2026-11-20",
+  "ageRating": null,
+  "runtime": 77,
+  "score": 6.7,
+  "trailerKey": "vbhTyM5E9QE",
+  "status": "COMING_SOON",
+  "vietnamese": false,
+  "genres": [
+   "Gia đình",
+   "Giả tưởng",
+   "Hài",
+   "Hoạt hình",
+   "Phiêu lưu"
+  ]
+ },
+ {
+  "id": 36,
+  "tmdbId": 1720229,
+  "slug": "trai-giam-hanh-phuc",
+  "title": "Trại Giam Hạnh Phúc",
+  "originalTitle": "Trại Giam Hạnh Phúc",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/lQWHcA1Lt2MOizjyCcOZHzsZeOP.jpg",
+  "releaseDate": "2026-11-20",
+  "ageRating": null,
+  "runtime": null,
+  "score": 0.0,
+  "trailerKey": null,
+  "status": "COMING_SOON",
+  "vietnamese": true,
+  "genres": [
+   "Chính kịch",
+   "Hài"
+  ]
+ },
+ {
+  "id": 37,
+  "tmdbId": 1689157,
+  "slug": "me-min",
+  "title": "Mẹ Mìn",
+  "originalTitle": "Mẹ Mìn",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/526o7OOLyqzYcC39Y3d85B8fgVS.jpg",
+  "releaseDate": "2026-11-27",
+  "ageRating": null,
+  "runtime": null,
+  "score": 0.0,
+  "trailerKey": null,
+  "status": "COMING_SOON",
+  "vietnamese": true,
+  "genres": [
+   "Bí ẩn",
+   "Gây cấn",
+   "Kinh dị"
+  ]
+ },
+ {
+  "id": 38,
+  "tmdbId": 1804242,
+  "slug": "bat-ca-ba-tay",
+  "title": "Bắt Cá Ba Tay",
+  "originalTitle": "Bắt Cá Ba Tay",
+  "posterUrl": "https://image.tmdb.org/t/p/w500/7hg6U8oLXRtWpWjJfKSRqKKzLOz.jpg",
+  "releaseDate": "2026-12-04",
+  "ageRating": null,
+  "runtime": 115,
+  "score": 0.0,
+  "trailerKey": "J_rPrr6bW5o",
+  "status": "COMING_SOON",
+  "vietnamese": true,
+  "genres": [
+   "Giả tưởng",
+   "Hài",
+   "Lãng mạn"
+  ]
+ }
+]

@@ -1,0 +1,172 @@
+[
+ {
+  "slug": "ho-chi-minh",
+  "name": "TP. Hồ Chí Minh",
+  "cinemaCount": 98
+ },
+ {
+  "slug": "ha-noi",
+  "name": "Hà Nội",
+  "cinemaCount": 69
+ },
+ {
+  "slug": "dong-nai",
+  "name": "Đồng Nai",
+  "cinemaCount": 14
+ },
+ {
+  "slug": "da-nang",
+  "name": "Đà Nẵng",
+  "cinemaCount": 13
+ },
+ {
+  "slug": "dak-lak",
+  "name": "Đắk Lắk",
+  "cinemaCount": 11
+ },
+ {
+  "slug": "hai-phong",
+  "name": "Hải Phòng",
+  "cinemaCount": 11
+ },
+ {
+  "slug": "bac-ninh",
+  "name": "Bắc Ninh",
+  "cinemaCount": 10
+ },
+ {
+  "slug": "can-tho",
+  "name": "Cần Thơ",
+  "cinemaCount": 9
+ },
+ {
+  "slug": "an-giang",
+  "name": "An Giang",
+  "cinemaCount": 8
+ },
+ {
+  "slug": "lam-dong",
+  "name": "Lâm Đồng",
+  "cinemaCount": 8
+ },
+ {
+  "slug": "nghe-an",
+  "name": "Nghệ An",
+  "cinemaCount": 8
+ },
+ {
+  "slug": "khanh-hoa",
+  "name": "Khánh Hòa",
+  "cinemaCount": 7
+ },
+ {
+  "slug": "ninh-binh",
+  "name": "Ninh Bình",
+  "cinemaCount": 7
+ },
+ {
+  "slug": "phu-tho",
+  "name": "Phú Thọ",
+  "cinemaCount": 7
+ },
+ {
+  "slug": "quang-tri",
+  "name": "Quảng Trị",
+  "cinemaCount": 7
+ },
+ {
+  "slug": "tay-ninh",
+  "name": "Tây Ninh",
+  "cinemaCount": 7
+ },
+ {
+  "slug": "gia-lai",
+  "name": "Gia Lai",
+  "cinemaCount": 6
+ },
+ {
+  "slug": "hue",
+  "name": "Huế",
+  "cinemaCount": 6
+ },
+ {
+  "slug": "thai-nguyen",
+  "name": "Thái Nguyên",
+  "cinemaCount": 5
+ },
+ {
+  "slug": "thanh-hoa",
+  "name": "Thanh Hóa",
+  "cinemaCount": 5
+ },
+ {
+  "slug": "vinh-long",
+  "name": "Vĩnh Long",
+  "cinemaCount": 5
+ },
+ {
+  "slug": "ca-mau",
+  "name": "Cà Mau",
+  "cinemaCount": 4
+ },
+ {
+  "slug": "dong-thap",
+  "name": "Đồng Tháp",
+  "cinemaCount": 4
+ },
+ {
+  "slug": "hung-yen",
+  "name": "Hưng Yên",
+  "cinemaCount": 4
+ },
+ {
+  "slug": "ha-tinh",
+  "name": "Hà Tĩnh",
+  "cinemaCount": 3
+ },
+ {
+  "slug": "lang-son",
+  "name": "Lạng Sơn",
+  "cinemaCount": 3
+ },
+ {
+  "slug": "lao-cai",
+  "name": "Lào Cai",
+  "cinemaCount": 3
+ },
+ {
+  "slug": "quang-ninh",
+  "name": "Quảng Ninh",
+  "cinemaCount": 3
+ },
+ {
+  "slug": "tuyen-quang",
+  "name": "Tuyên Quang",
+  "cinemaCount": 3
+ },
+ {
+  "slug": "quang-ngai",
+  "name": "Quảng Ngãi",
+  "cinemaCount": 2
+ },
+ {
+  "slug": "cao-bang",
+  "name": "Cao Bằng",
+  "cinemaCount": 1
+ },
+ {
+  "slug": "dien-bien",
+  "name": "Điện Biên",
+  "cinemaCount": 1
+ },
+ {
+  "slug": "lai-chau",
+  "name": "Lai Châu",
+  "cinemaCount": 1
+ },
+ {
+  "slug": "son-la",
+  "name": "Sơn La",
+  "cinemaCount": 0
+ }
+]
