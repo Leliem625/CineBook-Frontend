@@ -6,8 +6,9 @@ Backend: repo `cinebook-backend` (Spring Boot). Đặc tả: `docs/CineBook_SRS_
 ## Chạy
 ```bash
 npm install
-python3 scripts/export-mock-data.py   # tạo dữ liệu mock từ DB backend (cần docker compose của backend đang chạy)
-npm run dev                           # http://localhost:3000
+python3 scripts/export-mock-data.py   # mock suất chiếu (tạm, đến khi backend có API suất chiếu)
+npm run dev                           # http://localhost:3000 - cần backend chạy ở http://localhost:8080
+npm run build                         # cần backend ĐANG CHẠY: dữ liệu "use cache" được lấy lúc build
 ```
 
 ## Cấu trúc
@@ -25,7 +26,6 @@ src/
 │   ├── types.ts                  Kiểu dữ liệu = response API dự kiến
 │   ├── format.ts                 Định dạng ngày, giờ, giá, phiên bản (2D Phụ đề...)
 │   └── useToday.ts               Ngày hôm nay (chỉ tính ở trình duyệt)
-└── mocks/                        movies.json, provinces.json, cinemas.json (dữ liệu thật từ DB)
 public/mock/showtimes/{id}.json   Suất chiếu theo rạp (không commit, tạo bằng script)
 ```
 

@@ -41,7 +41,9 @@ export interface Cinema {
   chain: string;
   chainSlug: string;
   provinceSlug: string;
+  provinceName?: string;
   address: string;
+  phone?: string | null;
   lat: number | null;
   lng: number | null;
 }

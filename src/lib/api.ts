@@ -1,45 +1,60 @@
 /**
  * Lớp gọi dữ liệu duy nhất của frontend.
  *
- * Hiện tại đọc dữ liệu MOCK (xuất từ DB thật bằng scripts/export-mock-data.py).
- * Khi backend có API: thay phần thân mỗi hàm bằng fetch tới API_BASE (endpoint ghi ở từng hàm),
- * các component không cần sửa vì kiểu trả về giữ nguyên.
+ * Phim, tỉnh/thành, rạp: đã gọi backend thật (cinebook-backend, mặc định http://localhost:8080/api/v1).
+ * Kiểu trả về giữ nguyên như lúc dùng mock nên các component không phải sửa.
  *
  * Lưu ý Next.js 16 (cacheComponents): fetch trong server component mặc định KHÔNG cache và sẽ chặn render.
- * Khi đổi sang API thật, dùng directive "use cache" cho dữ liệu ít đổi (phim, tỉnh, rạp),
- * hoặc bọc component trong <Suspense>.
+ * - Hiện ĐANG TẮT cache cho phim, tỉnh/thành, rạp: mỗi lần tải trang server Next đều gọi backend.
+ *   Trang chủ bọc phần dùng dữ liệu này trong <Suspense> nên vẫn build được.
+ * - Bật lại cache cho tỉnh/rạp: bỏ comment "use cache" + cacheLife("hours") (và import cacheLife).
+ *   Khi đó dữ liệu được lấy ngay lúc `next build` nên KHI BUILD BACKEND PHẢI ĐANG CHẠY.
  */
-import moviesMock from "@/mocks/movies.json";
-import provincesMock from "@/mocks/provinces.json";
-import cinemasMock from "@/mocks/cinemas.json";
-import type { Cinema, Movie, Province, Showtime } from "./types";
+// import { cacheLife } from "next/cache";   // bật lại khi dùng lại "use cache"
+import { cache } from "react";
+import { apiGet } from "./http";
+import type { Cinema, Movie, MovieStatus, Province } from "./types";
 
-export const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "http://localhost:8080/api/v1";
+export { API_BASE } from "./http";
 
-/** GET {API_BASE}/movies  -> phim đang chiếu + sắp chiếu */
-export async function getMovies(): Promise<Movie[]> {
-  return moviesMock as Movie[];
-}
+/**
+ * GET {API_BASE}/movies[?status=]  -> phim đang chiếu + sắp chiếu.  ✅ ĐÃ NỐI BACKEND THẬT
+ * Không truyền status thì lấy cả hai.
+ */
+export const getMovies = cache(
+  async (status?: MovieStatus): Promise<Movie[]> => {
+    // "use cache";
+    // cacheLife("minutes");
+    // React cache(): nhiều component gọi trong CÙNG 1 request -> chỉ gọi backend 1 lần (không cache giữa các request)
+    return apiGet<Movie[]>("/movies", { status });
+  },
+);
 
-/** GET {API_BASE}/provinces  -> 34 tỉnh/thành kèm số cụm rạp */
+/**
+ * GET {API_BASE}/provinces  -> 34 tỉnh/thành kèm số cụm rạp, tỉnh nhiều rạp xếp trước.  ✅ ĐÃ NỐI BACKEND THẬT
+ */
 export async function getProvinces(): Promise<Province[]> {
-  return provincesMock as Province[];
-}
-
-/** GET {API_BASE}/cinemas  -> toàn bộ cụm rạp (UI tự lọc theo tỉnh, gom theo hãng) */
-export async function getCinemas(): Promise<Cinema[]> {
-  return cinemasMock as Cinema[];
+  // "use cache";
+  // cacheLife("hours"); // tỉnh/thành và số rạp gần như không đổi
+  return apiGet<Province[]>("/provinces");
 }
 
 /**
- * GET {API_BASE}/cinemas/{cinemaId}/showtimes?date=yyyy-MM-dd
- * Gọi từ client component (khi người dùng chọn rạp / ngày).
+ * GET {API_BASE}/cinemas[?province=&chain=]  -> cụm rạp đang hoạt động.  ✅ ĐÃ NỐI BACKEND THẬT
+ * Không truyền gì thì lấy cả nước (UI tự lọc theo tỉnh, gom theo hãng).
  */
-export async function getCinemaShowtimes(cinemaId: number, date: string): Promise<Showtime[]> {
-  const res = await fetch(`/mock/showtimes/${cinemaId}.json`);
-  if (!res.ok) {
-    return [];
-  }
-  const body: { showtimes: Showtime[] } = await res.json();
-  return body.showtimes.filter((s) => s.startAt.startsWith(date));
+export async function getCinemas(filter?: {
+  province?: string;
+  chain?: string;
+}): Promise<Cinema[]> {
+  // "use cache";
+  // cacheLife("hours"); // filter là tham số -> mỗi bộ lọc có cache riêng  (ĐANG TẮT để xem request)
+  return apiGet<Cinema[]>("/cinemas", filter);
 }
+
+/** GET {API_BASE}/cinemas/{id}  -> chi tiết 1 cụm rạp (404 nếu không có).  ✅ ĐÃ NỐI BACKEND THẬT */
+export async function getCinema(id: number): Promise<Cinema> {
+  return apiGet<Cinema>(`/cinemas/${id}`);
+}
+
+// getCinemaShowtimes (gọi từ client) nằm ở ./api-client.ts

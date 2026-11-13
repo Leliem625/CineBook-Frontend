@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { getCinemaShowtimes } from "@/lib/api";
+import { getCinemaShowtimes } from "@/lib/api-client";
 import { addDays, dayMonth, fullDate, priceShort, runtimeText, timeOf, versionLabel, weekdayShort } from "@/lib/format";
 import { useToday } from "@/lib/useToday";
 import type { Cinema, Movie, Province, Showtime } from "@/lib/types";
@@ -23,7 +23,8 @@ export default function BuyByCinema({ provinces, cinemas, movies }: Props) {
   const [cinemaId, setCinemaId] = useState<number | null>(() => firstCinemaOf(withCinemas[0]?.slug ?? ""));
   const today = useToday();
   const [pickedDate, setDate] = useState<string | null>(null);
-  const date = pickedDate ?? today; // chưa chọn ngày -> mặc định hôm nay
+  // Chưa chọn ngày, hoặc ngày đã chọn đã qua (sang ngày mới) -> mặc định hôm nay
+  const date = pickedDate && today && pickedDate >= today ? pickedDate : today;
 
   const chains = useMemo(() => groupByChain(cinemas.filter((c) => c.provinceSlug === provinceSlug)), [cinemas, provinceSlug]);
   const cinema = cinemas.find((c) => c.id === cinemaId) ?? null;
