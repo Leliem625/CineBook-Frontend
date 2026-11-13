@@ -3,7 +3,7 @@
  * Tách khỏi api.ts vì api.ts dùng "use cache" (chỉ chạy được phía server).
  */
 import { apiGet } from "./http";
-import type { Movie, MovieStatus, Showtime } from "./types";
+import type { Movie, MovieShowtimes, MovieStatus } from "./types";
 
 /**
  * GET {API_BASE}/movies?status=   ✅ backend thật
@@ -26,14 +26,9 @@ export function getMoviesByStatus(status: MovieStatus): Promise<Movie[]> {
 const moviesByStatus = new Map<MovieStatus, Promise<Movie[]>>();
 
 /**
- * GET {API_BASE}/cinemas/{cinemaId}/showtimes?date=yyyy-MM-dd   (backend chưa có -> đang đọc mock)
- * Gọi từ client component (khi người dùng chọn rạp / ngày).
+ * GET {API_BASE}/showtimes?cinema={cinemaId}&date=yyyy-MM-dd   ✅ backend thật
+ * Gọi từ client component (khi người dùng chọn rạp / ngày). Trả các phim có suất hôm đó, mỗi phim kèm suất chiếu.
  */
-export async function getCinemaShowtimes(cinemaId: number, date: string): Promise<Showtime[]> {
-  const res = await fetch(`/mock/showtimes/${cinemaId}.json`);
-  if (!res.ok) {
-    return [];
-  }
-  const body: { showtimes: Showtime[] } = await res.json();
-  return body.showtimes.filter((s) => s.startAt.startsWith(date));
+export function getCinemaShowtimes(cinemaId: number, date: string): Promise<MovieShowtimes[]> {
+  return apiGet<MovieShowtimes[]>("/showtimes", { cinema: cinemaId, date });
 }

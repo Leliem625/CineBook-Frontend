@@ -48,7 +48,7 @@ export interface Cinema {
   lng: number | null;
 }
 
-/** Một suất chiếu trong GET /api/v1/cinemas/{id}/showtimes?date= */
+/** Một suất chiếu trong GET /api/v1/showtimes */
 export interface Showtime {
   id: number;
   movieId: number;
@@ -57,4 +57,10 @@ export interface Showtime {
   language: Language;
   status: ShowtimeStatus;
   price: number; // VND
+}
+
+/** Phần tử của GET /api/v1/showtimes?cinema=&date=: một phim kèm các suất chiếu của nó. */
+export interface MovieShowtimes {
+  movie: Movie;
+  showtimes: Showtime[];
 }

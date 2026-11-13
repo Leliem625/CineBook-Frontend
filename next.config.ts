@@ -9,7 +9,9 @@ const nextConfig: NextConfig = {
   },
   images: {
     // Poster phim từ TMDB (image.tmdb.org không bị chặn ở VN, chỉ api.themoviedb.org bị chặn)
-    remotePatterns: [{ protocol: "https", hostname: "image.tmdb.org", pathname: "/t/p/**" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "image.tmdb.org", pathname: "/t/p/**" },
+    ],
   },
   turbopack: {
     rules: {
@@ -19,6 +21,7 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  reactStrictMode: false,
 };
 
 export default nextConfig;

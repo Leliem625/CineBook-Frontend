@@ -6,9 +6,8 @@ Backend: repo `cinebook-backend` (Spring Boot). Đặc tả: `docs/CineBook_SRS_
 ## Chạy
 ```bash
 npm install
-python3 scripts/export-mock-data.py   # mock suất chiếu (tạm, đến khi backend có API suất chiếu)
-npm run dev                           # http://localhost:3000 - cần backend chạy ở http://localhost:8080
-npm run build                         # cần backend ĐANG CHẠY: dữ liệu "use cache" được lấy lúc build
+npm run dev     # http://localhost:3000 - cần backend chạy ở http://localhost:8080
+npm run build   # cần backend ĐANG CHẠY: dữ liệu "use cache" được lấy lúc build
 ```
 
 ## Cấu trúc
@@ -22,22 +21,21 @@ src/
 │   ├── MovieCarousel.tsx         Carousel phim đang chiếu / sắp chiếu
 │   └── BuyByCinema.tsx           Khu vực -> Rạp (gom theo hãng) -> Ngày -> Suất chiếu
 ├── lib/
-│   ├── api.ts                    ⭐ Nơi DUY NHẤT lấy dữ liệu (hiện đọc mock)
+│   ├── api.ts                    ⭐ Nơi lấy dữ liệu từ backend (server component)
 │   ├── types.ts                  Kiểu dữ liệu = response API dự kiến
 │   ├── format.ts                 Định dạng ngày, giờ, giá, phiên bản (2D Phụ đề...)
 │   └── useToday.ts               Ngày hôm nay (chỉ tính ở trình duyệt)
-public/mock/showtimes/{id}.json   Suất chiếu theo rạp (không commit, tạo bằng script)
 ```
 
-## Chuyển từ mock sang API thật
-Chỉ sửa `src/lib/api.ts`, mỗi hàm đã ghi endpoint tương ứng:
+## API backend đang dùng
+Dữ liệu lấy qua `src/lib/api.ts` (server) và `src/lib/api-client.ts` (client), mỗi hàm đã ghi endpoint tương ứng:
 
 | Hàm | Endpoint backend |
 |---|---|
 | `getMovies()` | `GET /api/v1/movies` |
 | `getProvinces()` | `GET /api/v1/provinces` |
 | `getCinemas()` | `GET /api/v1/cinemas` |
-| `getCinemaShowtimes(id, date)` | `GET /api/v1/cinemas/{id}/showtimes?date=yyyy-MM-dd` |
+| `getCinemaShowtimes(id, date)` (trong `api-client.ts`) | `GET /api/v1/showtimes?cinema={id}&date=yyyy-MM-dd` |
 
 Giữ đúng kiểu trong `types.ts` thì component không phải sửa. Next 16 bật `cacheComponents`:
 fetch trong server component không tự cache, nên dùng `"use cache"` cho dữ liệu ít đổi hoặc bọc `<Suspense>`.

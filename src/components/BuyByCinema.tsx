@@ -6,15 +6,15 @@ import { useEffect, useMemo, useState } from "react";
 import { getCinemaShowtimes } from "@/lib/api-client";
 import { addDays, dayMonth, fullDate, priceShort, runtimeText, timeOf, versionLabel, weekdayShort } from "@/lib/format";
 import { useToday } from "@/lib/useToday";
-import type { Cinema, Movie, Province, Showtime } from "@/lib/types";
+import type { Cinema, MovieShowtimes, Province, Showtime } from "@/lib/types";
 import { InfoIcon } from "./icons";
 
 const DAYS = 7;
 
-type Props = { provinces: Province[]; cinemas: Cinema[]; movies: Movie[] };
+type Props = { provinces: Province[]; cinemas: Cinema[] };
 
 /** Khối "Mua vé theo rạp": Khu vực -> Rạp (gom theo hãng) -> Ngày -> Suất chiếu. */
-export default function BuyByCinema({ provinces, cinemas, movies }: Props) {
+export default function BuyByCinema({ provinces, cinemas }: Props) {
   const withCinemas = provinces.filter((p) => p.cinemaCount > 0);
   const [provinceSlug, setProvinceSlug] = useState(withCinemas[0]?.slug ?? "");
   // Rạp chọn sẵn = rạp đầu tiên đang hiển thị (theo thứ tự hãng đã sắp xếp)
@@ -121,7 +121,7 @@ export default function BuyByCinema({ provinces, cinemas, movies }: Props) {
             </div>
 
             {cinema && date ? (
-              <CinemaShowtimes key={`${cinema.id}-${date}`} cinema={cinema} date={date} movies={movies} />
+              <CinemaShowtimes key={`${cinema.id}-${date}`} cinema={cinema} date={date} />
             ) : (
               <p className="rounded-xl bg-white p-8 text-center text-muted ring-1 ring-line">Chọn rạp để xem lịch chiếu.</p>
             )}
@@ -132,13 +132,15 @@ export default function BuyByCinema({ provinces, cinemas, movies }: Props) {
   );
 }
 
-function CinemaShowtimes({ cinema, date, movies }: { cinema: Cinema; date: string; movies: Movie[] }) {
-  const [showtimes, setShowtimes] = useState<Showtime[] | null>(null);
+function CinemaShowtimes({ cinema, date }: { cinema: Cinema; date: string }) {
+  const [showtimes, setShowtimes] = useState<MovieShowtimes[] | null>(null);
   const [now, setNow] = useState(0);
 
   useEffect(() => {
     let active = true;
-    getCinemaShowtimes(cinema.id, date).then((list) => {
+    getCinemaShowtimes(cinema.id, date)
+      .catch(() => [] as MovieShowtimes[]) // lỗi mạng/backend -> coi như chưa có suất, không để skeleton quay mãi
+      .then((list) => {
       if (active) {
         setNow(Date.now());
         setShowtimes(list);
@@ -149,7 +151,7 @@ function CinemaShowtimes({ cinema, date, movies }: { cinema: Cinema; date: strin
     };
   }, [cinema.id, date]);
 
-  const byMovie = useMemo(() => groupByMovie(showtimes ?? [], movies), [showtimes, movies]);
+  const byMovie = useMemo(() => (showtimes ?? []).map(groupByVersion), [showtimes]);
   const mapUrl =
     cinema.lat && cinema.lng ? `https://www.google.com/maps/search/?api=1&query=${cinema.lat},${cinema.lng}` : null;
 
@@ -309,20 +311,12 @@ function groupByChain(list: Cinema[]): [string, Cinema[]][] {
   );
 }
 
-/** Gom suất chiếu theo phim, rồi theo phiên bản (định dạng + ngôn ngữ). */
-function groupByMovie(showtimes: Showtime[], movies: Movie[]) {
-  const movieById = new Map(movies.map((m) => [m.id, m]));
-  const result = new Map<number, { movie: Movie; versions: Map<string, Showtime[]> }>();
+/** Gom suất chiếu của một phim theo phiên bản (định dạng + ngôn ngữ). */
+function groupByVersion({ movie, showtimes }: MovieShowtimes) {
+  const versions = new Map<string, Showtime[]>();
   for (const s of showtimes) {
-    const movie = movieById.get(s.movieId);
-    if (!movie) continue;
-    const entry = result.get(movie.id) ?? { movie, versions: new Map() };
     const label = versionLabel(s.format, s.language);
-    entry.versions.set(label, [...(entry.versions.get(label) ?? []), s]);
-    result.set(movie.id, entry);
+    versions.set(label, [...(versions.get(label) ?? []), s]);
   }
-  return [...result.values()].map(({ movie, versions }) => ({
-    movie,
-    versions: [...versions.entries()].map(([label, items]) => ({ label, items })),
-  }));
+  return { movie, versions: [...versions.entries()].map(([label, items]) => ({ label, items })) };
 }

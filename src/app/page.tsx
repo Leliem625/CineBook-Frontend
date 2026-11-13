@@ -31,8 +31,8 @@ export default function HomePage() {
 }
 
 async function BuyByCinemaSection() {
-  const [movies, provinces, cinemas] = await Promise.all([getMovies(), getProvinces(), getCinemas()]);
-  return <BuyByCinema provinces={provinces} cinemas={cinemas} movies={movies} />;
+  const [provinces, cinemas] = await Promise.all([getProvinces(), getCinemas()]);
+  return <BuyByCinema provinces={provinces} cinemas={cinemas} />;
 }
 
 async function FooterSection() {
